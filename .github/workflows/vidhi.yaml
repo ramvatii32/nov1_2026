@@ -12,6 +12,7 @@ jobs:
              cat /etc/os-release
              docker --version
              docker compose version
+             sshpass -v
       - name: mystep2-clone the repo in the current directory 
         uses: actions/checkout@v4
       - name: mystep3-check the source code
