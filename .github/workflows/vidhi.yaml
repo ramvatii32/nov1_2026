@@ -10,5 +10,10 @@ jobs:
              whoami
              cat /etc/os-release
              docker --version
-             docker compose version 
+             docker compose version
+      - name: mystep2-clone the repo in the current directory 
+        uses: actions/checkout@v4
+      - name: mystep3-check the source code
+        run: docker image build -t ramvatii32/myimage_nov1:t1 -f Dockerfile .
+        
 
