@@ -22,10 +22,7 @@ jobs:
       - name: mystep5-check the docker images
         run: docker images
       - name: mystep6
-        run: sshpass -p 'Anil@332211' shh \
-             -o StrictHostKeyChecking=accept-new \  
-             root@164.68.10i5.85 \
-             'ls -al'
+        run: sshpass -p 'Anil@332211' shh \ -o StrictHostKeyChecking=accept-new \ root@164.68.10i5.85 \ 'ls -al'
       
   
              
