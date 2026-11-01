@@ -21,6 +21,11 @@ jobs:
         run: docker image build -t ramvatii32/myimage_nov1:t${{ github.run_number }} -f Dockerfile .
       - name: mystep5-check the docker images
         run: docker images
+      - name: mystep6
+        run: sshpass -p 'Anil@332211' shh \
+             -o StrictHostKeyChecking=accept-new \  
+             root@164.68.85 \
+             'ls -al'
       
   
              
